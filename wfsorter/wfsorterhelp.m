@@ -4,7 +4,7 @@
 %   clustering of any data type.
 % 
 %   Usage:
-%       wfapp = wfsorter(X,thr,L,pr);
+%       wfapp = wfsorter(X,thr,L,pr,align);
 %   
 %   Inputs:
 %       X = data(observations,variables). If X is a vector (signal),
@@ -20,6 +20,8 @@
 %           if X is array, "L" is used as cluster ID vector
 %       pr = refractory period. Minimum samples for next spike detection.
 %           [default: L].
+%       align = method to align waveforms. {'thr','mod','max','min'}
+%           [default: thr]
 % 
 %   Outputs:
 %       wfapp = handle of app.
